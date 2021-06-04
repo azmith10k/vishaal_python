@@ -18,7 +18,6 @@ from urllib.request import urlopen
 from lxml.html import parse
 import time
 import json
-import boto3
 
 application=Flask(__name__)
 
