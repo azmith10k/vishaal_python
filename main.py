@@ -19,7 +19,7 @@ from lxml.html import parse
 import time
 import json
 
-application=Flask(__name__)
+app=Flask(__name__)
 
 
 
@@ -63,7 +63,7 @@ params = (
     ('download', 'true'),
 )
 
-@application.route('/')
+@app.route('/')
 def index():
     
     a=5
@@ -514,4 +514,4 @@ if __name__ == '__main__':
 
 
           # stock_model() 
-        application.run(debug=True)
+        app.run(debug=True)
